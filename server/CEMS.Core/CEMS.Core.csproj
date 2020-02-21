@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Domain\Entities\" />
+    <Folder Include="Domain\Enums\" />
+    <Folder Include="Domain\Repositories\" />
+    <Folder Include="Domain\Services\Communication\" />
+    <Folder Include="SharedServices\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+</Project>

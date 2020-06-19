@@ -22,7 +22,7 @@ The purpose of this system is to provide a centralised, digital platform for cam
 There is currently no support for setting this project up for yourself. Instructions on hosting the project yourself will be provided later on if possible.
 
 ## Where Can I Get Help
-Unfortunately, not help can be provided at this stage.
+Unfortunately, no help can be provided at this stage.
 
 ## Contributing
 Contributions are not currently accepted. This project is provided freely as-is for others to view the code and use in any way they wish, but changes must be forked.

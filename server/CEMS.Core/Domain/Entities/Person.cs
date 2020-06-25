@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CEMS.Core.Domain.Entities
 {
-    class Person : ModifiableEntity<int>, IDeletable, IArchivable
+    public class Person : ModifiableEntity<int>, IDeletable, IArchivable
     {
         public string FirstName { get; set; }
         public string MiddleName { get; set; }

@@ -7,6 +7,7 @@ namespace CEMS.Core.Domain.Entities.AbstractEntities
 {
     public abstract class CreatedEntity<T> : Entity<T>, ICreatedEntity
     {
+        public int CreatedById { get; set; }
         public User CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
     }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CEMS.Core.Domain.Entities
 {
-    class UserToken : Entity<int>
+    public class UserToken : Entity<int>
     {
         public User User { get; set; }
         public string IPAddress { get; set; }

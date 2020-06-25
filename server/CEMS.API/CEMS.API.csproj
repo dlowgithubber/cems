@@ -5,10 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Extensions\" />
-    <Folder Include="DTOs\" />
-    <Folder Include="Mapping\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CEMS.Core\CEMS.Core.csproj" />
     <ProjectReference Include="..\CEMS.Infrastructure\CEMS.Infrastructure.csproj" />
   </ItemGroup>
 

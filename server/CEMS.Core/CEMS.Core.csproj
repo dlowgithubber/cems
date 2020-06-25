@@ -8,8 +8,10 @@
   <ItemGroup>
     <Folder Include="Domain\Repositories\" />
     <Folder Include="Domain\Services\Communication\" />
+    <Folder Include="Mapping\" />
     <Folder Include="SharedServices\" />
     <Folder Include="Services\" />
+    <Folder Include="Interfaces\Services" />
   </ItemGroup>
 
 </Project>

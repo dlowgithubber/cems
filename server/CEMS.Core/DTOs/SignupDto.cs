@@ -18,16 +18,11 @@ namespace CEMS.Core.DTOs
         [Required(ErrorMessage = "Password is required")]
         [MinLength(10, ErrorMessage = "Password must be at least ten characters")]
         public string Password { get; set; }
+        
+        public string MFACode { get; set; }
 
         public SignupDto()
         {
-        }
-
-        public SignupDto(string userId, string name, string password)
-        {
-            UserId = userId;
-            Name = name;
-            Password = password;
         }
     }
 }

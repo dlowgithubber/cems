@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CEMS.Core.Interfaces.Repositories
+namespace CEMS.Core.Domain.Repositories
 {
     public interface IUserRepository
     {
         Task<IEnumerable<User>> ListAsync();
         //Task AddAsync(User user);
         Task<User> FindByIdAsync(string id);
-        //void Update(User user);
+        void Update(User user);
         //void Remove(User user);
     }
 }

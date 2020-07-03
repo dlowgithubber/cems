@@ -1,5 +1,5 @@
 ﻿using CEMS.Core.Domain.Entities;
-using CEMS.Core.Interfaces.Repositories;
+using CEMS.Core.Domain.Repositories;
 using CEMS.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -22,7 +22,12 @@ namespace CEMS.Infrastructure.Repositories
 
         public async Task<IEnumerable<User>> ListAsync()
         {
-            return await _context.Users.ToListAsync<User>();
+            return await _context.Users.ToListAsync();
+        }
+
+        public void Update(User user)
+        {
+            _context.Users.Update(user);
         }
     }
 }

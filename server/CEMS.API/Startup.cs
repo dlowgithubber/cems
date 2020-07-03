@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CEMS.Core.Domain.Services;
-using CEMS.Core.Interfaces.Repositories;
-using CEMS.Core.Interfaces.Services;
+using CEMS.Core.Domain.Repositories;
 using CEMS.Infrastructure.Contexts;
 using CEMS.Infrastructure.Repositories;
 using CEMS.Infrastructure.UoW;
@@ -17,6 +16,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using CEMS.Core.Services;
+using CEMS.API.Extensions;
 
 namespace CEMS.API
 {
@@ -54,6 +55,8 @@ namespace CEMS.API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {

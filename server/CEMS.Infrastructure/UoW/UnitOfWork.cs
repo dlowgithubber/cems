@@ -1,4 +1,4 @@
-﻿using CEMS.Core.Interfaces.Repositories;
+﻿using CEMS.Core.Domain.Repositories;
 using CEMS.Infrastructure.Contexts;
 using System;
 using System.Collections.Generic;

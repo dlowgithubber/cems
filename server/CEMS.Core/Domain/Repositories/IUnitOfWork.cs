@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CEMS.Core.Interfaces.Repositories
+namespace CEMS.Core.Domain.Repositories
 {
     public interface IUnitOfWork
     {
